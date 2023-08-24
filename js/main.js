@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const showCart = document.getElementById('showCart');
   showCart.addEventListener('click', () => {
-    console.log('mostrar')
+    
     if (!cartContainer.classList.contains('show')) {
       cartContainer.classList.add('show')
     } else {
