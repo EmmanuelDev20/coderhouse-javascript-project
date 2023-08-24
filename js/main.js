@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const getProducts = async () => {
   try {
-    const response = await fetch('../mockup/products.json')
+    // const response = await fetch('../mockup/products.json')
+    const response = await fetch('https://raw.githubusercontent.com/EmmanuelDev20/coderhouse-javascript-project/master/mockup/products.json')
     const products = await response.json()
     loadData(products)
   } catch (error) {

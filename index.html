@@ -15,7 +15,8 @@
     <h1 class="title">Tienda en línea</h1>
   </a>
 
-  <button class="show-cart" id="showCart">Carrito <img class="show-cart-icon" src="./assets/shopping-cart-outline-svgrepo-com.svg" alt="ícono de carrito"></button>
+  <button class="show-cart" id="showCart">Carrito <img class="show-cart-icon"
+      src="./assets/shopping-cart-outline-svgrepo-com.svg" alt="ícono de carrito"></button>
 
   <div class="carrito" id="cartContainer">
     <h2>Carrito de compras
@@ -49,34 +50,26 @@
 
   <section class="products" id="productosContainer">
 
-    <article>
-      <div class="delivery_now">
-        Entrega inmediata
-      </div>
-      <div class="image-container">
-        <img loading="lazy" class="main-image" src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
-          alt="imagen de producto">
-        <div href="#" class="overlay">
-          <a href="google.com" class="overlay-link" style="z-index: 999;">
-            <svg class="size" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="white" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <button class="showMore">Más información</button>
-      <h3>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h3>
+    <div class="loading-container">
 
-      <div class="price-container">
-        <p>109.95</p>
-        <span>* IVA incluido</span>
-      </div>
-      <button class="addToCart">Agregar al pedido
-        <img width="20px" src="./assets/shopping-cart-outline-svgrepo-com.svg" alt="ícono de carrito">
-      </button>
-    </article>
+      <svg class="loading" version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0"
+        xml:space="preserve">
+        <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+          <animateTransform attributeName="transform" dur="1s" type="translate" values="0 15 ; 0 -15; 0 15"
+            repeatCount="indefinite" begin="0.1" />
+        </circle>
+        <circle fill="#fff" stroke="none" cx="30" cy="50" r="6">
+          <animateTransform attributeName="transform" dur="1s" type="translate" values="0 10 ; 0 -10; 0 10"
+            repeatCount="indefinite" begin="0.2" />
+        </circle>
+        <circle fill="#fff" stroke="none" cx="54" cy="50" r="6">
+          <animateTransform attributeName="transform" dur="1s" type="translate" values="0 5 ; 0 -5; 0 5"
+            repeatCount="indefinite" begin="0.3" />
+        </circle>
+      </svg>
+    </div>
+
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
