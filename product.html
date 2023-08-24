@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda en línea</title>
+  <script src="./js/product.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+  <a class="container" href="index.html">
+    <h1 class="title">Tienda en línea</h1>
+  </a>
+
+  <button class="show-cart" id="showCart">Carrito <img class="show-cart-icon" src="./assets/shopping-cart-outline-svgrepo-com.svg" alt="ícono de carrito"></button>
+
+  <div class="carrito" id="cartContainer">
+    <h2>Carrito de compras
+      <img src="./assets/shopping-cart-outline-svgrepo-com.svg" alt="ícono de carrito">
+    </h2>
+    <div class="cart-products" id="cart">
+      <p>* No hay productos en el carrito</p>
+    </div>
+
+  </div>
+
+  <div class="product-container">
+    <div class="left">
+      <img src="./assets/placeholder-image.jpg" alt="">
+    </div>
+
+    <div class="right">
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae minus veritatis aliquam distinctio eveniet quos, odit repudiandae facere quo possimus ratione alias deleniti ullam consectetur, debitis numquam tenetur adipisci necessitatibus cupiditate maxime atque modi? Quas unde dolores cumque doloribus numquam corrupti, laborum ullam, maiores provident maxime deleniti atque perferendis.</p>
+      <p class="price">$0</p>
+      <button class="addToCartProduct" id="addToCart">Agregar al pedido 
+        <img width="20px"
+          src="./assets/shopping-cart-outline-svgrepo-com.svg" alt="ícono de carrito">
+      </button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
